@@ -29,7 +29,7 @@ const Users = () => {
 
   return (
     <UsersContainer>
-        <h1>Users</h1>
+      {users?.length > 0 && <h1>Users</h1>}
         {users?.map((user) => { 
             return (
                 <User key={user.id}>
